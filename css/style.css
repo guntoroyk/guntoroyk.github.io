@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass Mono', monospace;
+}
+
+/* header */
+.container-header {
+    padding: 10px 0;
+    margin: 10px 200px;
+    display: grid;
+    margin-bottom: 0;
+    /* border: 2px solid gray; */
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.navbar .menu ul{
+    margin: 0;
+    float: right;
+}
+
+.navbar .menu ul a {
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 10px;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 1.1em;
+    color: #525252;
+}
+
+.navbar .menu ul a:hover {
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 10px;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 1.105em;
+    color: black;
+}
+
+
+#guntoroyk {
+    font-family: 'Overpass Mono', monospace;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+}
+
+#hr-header {
+    margin: 0;
+    color: #525252;
+}
+
+
+/* widget */
+
+.container-widget {
+    display: grid;
+    justify-items: center;
+    margin: 10px 200px;
+}
+
+.myphoto {
+    width: 130px;
+}
+
+.myphoto img {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.container-widget h1, .container-widget p {
+    margin: 5px;
+    text-align: center;
+}
+
+.container-widget h1 {
+    border-bottom: 1px solid #525252;
+}
+
+.container-widget p {
+    padding: 0 190px;
+}
+
+#socmed a {
+    color: black;
+    font-size: 1.2em;
+    padding: 0 10px;
+}
+
+/* Post */
+
+/* .container-post {
+    display: grid;
+    margin: 10px 0;
+    padding: 10px 200px;
+    margin-bottom: 0;
+    justify-items: center;
+    grid-template-columns: 1fr 2fr;
+}
+
+.image {
+    width: 500px;
+}
+
+.image img {
+    width: 100%;
+}
+
+.column {
+    padding: 0 10px;
+} */
+
+.container-post {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-areas: "image title"
+                         "image author"
+                         "image outline"
+                         "image readmore"
+                         ; */
+                         /* "image ."; */
+    
+    margin: 10px 0;
+    padding: 30px 200px;
+    margin-bottom: 0;
+}
+
+.image img {
+    width: 93%;
+    height: auto;
+    object-fit: scale-down;
+    border-radius: 5px;
+}
+
+/* .title {
+    grid-area: title;
+} */
+
+.title h3 {
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+.title hr {
+    display: block;
+    margin: 0;
+    width: 30%;
+}
+
+.author {
+    margin: 15px 0;
+}
+.author p {
+    /* margin: 10px; */
+    display: inline;
+}
+
+#date {
+    font-size: 0.8em;
+}
+
+.outline {
+    grid-area: outline;
+}
+.outline p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.readmore {
+    grid-area: readmore;
+}
+
+.readmore h4 {
+    margin: 15px 0;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* 
+.image {
+    grid-area: image;
+}
+
+.image a {
+}
+
+
+.title {
+    grid-area: title;
+}
+
+.title h3 {
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+.title hr {
+    display: block;
+    margin: 0;
+    width: 30%;
+}
+
+.author {
+    grid-area: author;
+}
+
+.author p {
+    margin: 0;
+    display: inline;
+}
+
+#date {
+    font-size: 0.8em;
+}
+
+.outline {
+    grid-area: outline;
+}
+.outline p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.readmore {
+    grid-area: readmore;
+}
+
+.readmore h4 {
+    margin: 0;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+} */
+
+
+
+
+/* Footer */
+.container-footer {
+    padding: 10px 0;
+    margin: 10px 200px;
+    display: grid;
+}
+
+.container-footer p {
+    text-align: right;
+}
