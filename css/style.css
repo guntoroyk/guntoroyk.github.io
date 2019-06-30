@@ -10,6 +10,7 @@ body {
     margin: 10px 200px;
     display: grid;
     margin-bottom: 0;
+    /* position: fixed; */
     /* border: 2px solid gray; */
 }
 
@@ -17,6 +18,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    
 }
 
 .navbar .menu ul{
@@ -180,11 +182,19 @@ body {
     grid-area: readmore;
 }
 
+.readmore a {
+    text-decoration: none;
+}
+
 .readmore h4 {
     margin: 15px 0;
     font-size: 1.2em;
     text-decoration: none;
     color: black;
+}
+
+.readmore h4:hover {
+    color: #525252
 }
 
 
