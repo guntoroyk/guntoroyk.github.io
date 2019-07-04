@@ -6,11 +6,13 @@ body {
 
 /* header */
 .container-header {
-    padding: 10px 0;
-    margin: 10px 200px;
+    /* padding: 10px 200px; */
+    /* margin: 10px 200px; */
     display: grid;
     margin-bottom: 0;
-    /* position: fixed; */
+    position: fixed;
+    width: 100%;
+    /* justify-items: center; */
     /* border: 2px solid gray; */
 }
 
@@ -18,7 +20,9 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    
+    padding: 10px 200px;
+    background: white;
+    z-index: -1;
 }
 
 .navbar .menu ul{
@@ -64,9 +68,11 @@ body {
 /* widget */
 
 .container-widget {
+    position: relative;
     display: grid;
     justify-items: center;
     margin: 10px 200px;
+    top: 50px;
 }
 
 .myphoto {
