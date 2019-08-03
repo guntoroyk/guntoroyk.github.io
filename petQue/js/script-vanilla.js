@@ -1,7 +1,7 @@
 console.log("Connection success!");
 
 let addPetBtn = document.querySelector('#btnAddPet');
-let petList = JSON.parse(localStorage.getItem('pets-2'));
+let petList = JSON.parse(localStorage.getItem('petsss'));
 
 console.log(petList)
 if (petList === null) {
@@ -25,7 +25,24 @@ if (petList === null) {
             image: 'https://images.unsplash.com/photo-1491485880348-85d48a9e5312?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
             loved: false
         },
-
+        {
+            name: 'John',
+            desc: 'My gaze is unparalleled, and some have called me “creepy,” but I prefer to think of myself as “profound.” I also enjoy chewing my feet very loudly.',
+            image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80',
+            loved: false
+        },
+        {
+            name: 'Lely',
+            desc: "My name is Lely. I like to relax especially when it's daytime. I really love being caressed especially at the bottom of my neck.",
+            image: 'https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80',
+            loved: false
+        },
+        {
+            name: 'Cosmo',
+            desc: "Someday I hope to go somewhere fancy so my natural tuxedo can get a workout. Looking for that special someone who doesn’t mind a farm boy-turned-gentleman, who also chews his toes and loves his mom.",
+            image: 'https://images.unsplash.com/photo-1535819982781-87e951f67cce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80',
+            loved: false
+        },
     ]
     petItems.forEach(function (item){
         petList.push(item);
@@ -57,29 +74,32 @@ function addPet() {
     let petName = document.querySelector('#inputPetName');
     let petDesc = document.querySelector('#inputPetDesc');
     let petImage = document.querySelector('#inputPetImage');
-    let petItem = {
-        name: petName.value,
-        desc: petDesc.value,
-        image: petImage.value,
-        loved: false
+    if (petName.value !== '' && petDesc.value !== '' && petImage.value !== '') {
+        let petItem = {
+            name: petName.value,
+            desc: petDesc.value,
+            image: petImage.value,
+            loved: false
+        }
+        console.log(petItem);
+    
+        petList.push(petItem);
+    
+        savePet();
+        
+        let target = document.querySelector('.listExplore');
+        fillExplorePets(petList, target);
+        
+        petName.value = '';
+        petDesc.value = '';
+        petImage.value = '';
     }
-    console.log(petItem);
 
-    petList.push(petItem);
-
-    petName.value = '';
-    petDesc.value = '';
-    petImage.value = '';
-
-    savePet();
-
-    let target = document.querySelector('.listExplore');
-    fillExplorePets(petList, target);
 }
 
 
 function savePet() {
-    localStorage.setItem('pets-2', JSON.stringify(petList));
+    localStorage.setItem('petsss', JSON.stringify(petList));
 }
 
 function fillExplorePets(arr, targetElement) {

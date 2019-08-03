@@ -12,18 +12,81 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet" />
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #73a9aa" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="img/logo/grey/logo_transparent-edit.png" height="40" width="120" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="./index.html#slider">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="favorite.html">Favorite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-paw"></i> <i class="fas fa-plus" style="font-size:0.90rem;"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New pet</h5>
+                    <button type="button" class="close btn-tosca" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Pet Name</label>
+                            <input type="text" class="form-control" id="inputPetName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Pet Description:</label>
+                            <textarea class="form-control" id="inputPetDesc" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Pet Image Url</label>
+                            <input type="text" class="form-control" id="inputPetImage" required>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-tosca" id="btnAddPet">Add pet</button>
+                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    
     <div class="container">
-        <div class="row justify-content-center mb-5">
+        <div class="row justify-content-center mb-5 mt-5">
             <h1 class="">Explore to find your favorite pets...</h1>
         </div>
-
-        <div class="row justify-content-center listExplore">
-         
-        </div>
         
+        <div class="row justify-content-center listExplore">  
+        </div>
     </div>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
