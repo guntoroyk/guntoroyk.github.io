@@ -1,0 +1,108 @@
+/* div.c-wrapper{
+  width: 80%; 
+  margin: auto;
+} */
+
+/* .carousel-inner > .carousel-item > img, 
+.carousel-inner > .carousel-item > a > img{
+  width: 100%; 
+  margin: auto;
+} */
+
+body{
+  font-family: 'Titillium Web', sans-serif;
+  background-color: #F3F7F6;
+  padding-top: 50px;
+}
+
+h1{
+  text-align: center;
+}
+
+.carousel-inner > .item {
+  width:100%;
+  height:600px;
+}
+
+
+.card{
+  margin-bottom: 25px;
+}
+
+.card-columns{
+  column-count: 3;
+}
+
+.card-title{
+  font-weight: 500;
+  color: #73a9aa;
+}
+
+.card-block{
+  padding: 15px;
+}
+
+.btn-tosca{
+  border: 2px solid #73a9aa;
+  background-color: #F3F7F6;
+  color: #73a9aa;;
+ }
+
+.btn-tosca:hover{
+  background-color: #73a9aa;
+  color: white;
+}
+
+.love{
+  font-size: 2rem;
+  color: #73a9aa;
+}
+
+.love:hover{
+  font-weight: bold;
+  /* color: #1f797a; */
+  cursor: pointer;
+}
+
+.modal-footer{
+  background-color: #F3F7F6;
+}
+
+.menu{
+  margin-bottom: 100px;
+}
+
+.lead{
+  text-align: justify;
+  
+}
+
+#mainNavbar{
+  font-size: 1.125rem;
+  font-weight: 100;
+}
+
+#slider{
+  background-color: #F3F7F6;
+}
+
+#petQueTxt{
+  color: #73a9aa;
+}
+
+
+@media(max-width: 1200px){
+  .copyright{
+    font-size: 0.85rem;
+  }
+  h3{
+    font-size: 1.15rem;
+  }
+  
+  body{
+    /* padding-top: 0px; */
+  }
+}
+/* .lead{
+  text-align: center;
+} */
